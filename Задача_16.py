@@ -7,3 +7,11 @@
 # 1 2 3 4 5
 # 3
 # -> 1
+import random
+N = int(input('Введите размер массива N: '))
+X = int(input('Введите число X: '))
+A_array = []
+for i in range(N):
+    A_array.append(random.randint(0, N//2))
+print(A_array)   
+print(f'Количество раз число Х встречается в массиве A[1..N] : {A_array.count(X)}')

@@ -7,3 +7,19 @@
 # 6
 # -> 5
 
+import random
+N = int(input('Введите размер массива N: '))
+A_array = []
+for i in range(N):
+    A_array.append(random.randint(1, N))
+print(A_array)
+
+X = int(input('Введите число X: '))
+
+closest = A_array[0]
+for i in range(1, N):
+    if abs(A_array[i] - X) < abs(closest - X):
+        closest = A_array[i]
+
+print(f"Ближайший элемент к числу {X} в массиве A_array: {closest}")
+
