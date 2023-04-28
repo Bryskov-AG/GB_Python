@@ -4,3 +4,18 @@
 # Также нельзя использовать циклы.
 # 2 2
 # 4
+
+def sum(a, b):
+    if b == 0:
+        return a
+    elif a == 0:
+        return b
+    else:
+        return sum(a + 1, b - 1)
+    
+a = int(input('Введите число A: '))
+b = int(input('Введите число B: '))
+if (a>=b):
+    print (sum(a,b))
+else:
+    print(sum(b,a))
