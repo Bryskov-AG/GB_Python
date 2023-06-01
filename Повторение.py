@@ -239,11 +239,11 @@
 
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 
-n = int(input())
-num = 2
-res = 1
-for i in (num*num < n):
-    print(res)
+# n = int(input())
+# num = 2
+# res = 1
+# for i in (num*num < n):
+#     print(res)
 
 
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница.
@@ -254,3 +254,13 @@ for i in (num*num < n):
 
 # x = int(input())
 
+menu = ["first name","last name","number"]
+dict = {1:["Иванов","Иван","1234"],2:["Долгов", "Андрей", "4321"]}
+for i in dict:
+    # print(dict[i][0])
+    for j in range(3):
+        if "Дол" in dict[i][j]:
+    #     print(dict[i][0])
+    # if dict[i][0]== "Иванов":
+            print(dict[i])
+   
