@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Имя пользователя</title>
+    <script>
+        function displayUsername() {
+            var name = document.getElementById("nameInput").value;
+            var output = document.getElementById("output");
+            output.textContent = "Привет, " + name + "!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Введите ваше имя:</h1>
+    <input type="text" id="nameInput">
+    <button onclick="displayUsername()">Отправить</button>
+    <div id="output"></div>
+</body>
+</html>
